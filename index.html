@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
   <style>
     /* Body Style */
-    body {
+    body { 
       font-family: ;
       font-size: 1em;
       background-color: #EDEDED;
@@ -15,7 +15,7 @@
       padding: 10;
     }
 
-    /* Navbar */
+    /* Navigation Bar */
     ul {
       list-style-type: none;
       margin: 0;
@@ -85,7 +85,7 @@
       border-radius: 10px;
     }
     
-    /* Photography grid */
+      /* Photography grid */
     .photography {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -100,15 +100,22 @@
       height: 100%;
       border-radius: 5px;
     }
+    
+      /* Projects */ 
+    .projects-section {
+      padding: 50px 20px;
+      background-color: #C0D1D9; /* Adjust as needed */
+}
 
-    .projects-grid{
+ .projects-grid{
       display: flex;
-      justify-content: space-around;
       flex-wrap: wrap;
       gap: 20px;
       background: #C0D1D9;
-      padding: 20px;
+      padding: 30px;
       border-radius: 10px;
+      margin: 50px;
+       justify-content: space-around
     }
 
     .project-item {
@@ -128,19 +135,6 @@
 
     .project-item p {
       font-size: 1em;
-    }
-
-
-    /* Responsive design */
-    @media (max-width: 750px) {
-      .about, .work-experience {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .about img, .work-experience img {
-        width: 100%;
-      }
     }
     
   </style>
@@ -169,7 +163,7 @@
   </section>
 
   <!-- Work Experience -->
-  <section id="Work-Experience">
+  <section id="Work Experience">
     <h2 class="Work-Experience">Work-Experience</h2>
     <div class="work-experience">
       <img src="https://via.placeholder.com/300" alt="Work Experience Image">
@@ -191,7 +185,7 @@
   </section>
 
   <!-- Projects -->
-  <section class="projects-section">
+  <section id="projects-grid">
   <h2 class="Projects">Projects</h2>
   <div class="projects-grid">
     <div class="project-item">
