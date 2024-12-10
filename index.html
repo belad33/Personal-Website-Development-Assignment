@@ -3,9 +3,9 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <meta charset="UTF-8">
-  <title>Personal Website Development Assignement</title>
-<!--Google font link references-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Personal Website Development Assignment</title>
+  <!-- Google font link references -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Jomhuria&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,7 @@
       background-color: #EDEDED;
       margin: 0;
       padding: 10;
+
     }
 
     /* Navigation Bar */
@@ -81,9 +82,10 @@
       background: #C0D1D9;
       padding: 20px;
       border-radius: 10px;
+      text-align: center
     }
 
-   .about, .work-experience {
+    .about, .work-experience {
       display: flex;
       gap: 20px;
       align-items: center;
@@ -96,9 +98,33 @@
       max-width: 600px;
       height: auto;
       border-radius: 10px;
+      float: left; 
+      margin-right: 20px;
     }
-    
-      /* Photography grid */
+
+    /* Table layout */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 1.2em;
+      background: #C0D1D9;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    table th, table td {
+      border: 1px solid #AEADAD;
+      padding: 10px;
+      text-align: center;
+    }
+
+    table th {
+      background: #AEADAD;
+      color: white;
+    }
+
+    /* Photography grid */
     .photography {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -114,13 +140,13 @@
       border-radius: 5px;
     }
     
-      /* Projects */ 
+    /* Projects */ 
     .projects-section {
       padding: 50px 20px;
-      background-color: #C0D1D9; /* Adjust as needed */
-}
+      background-color: #C0D1D9;
+    }
 
- .projects-grid{
+    .projects-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
@@ -128,7 +154,7 @@
       padding: 30px;
       border-radius: 10px;
       margin: 50px;
-      justify-content: space-around
+      justify-content: space-around;
     }
 
     .project-item {
@@ -150,17 +176,19 @@
       font-size: 1em;
       margin-bottom: 30px;
     }
-    
+
+
   </style>
 </head>
 <body>
   <!-- Navigation bar -->
-<ul>
-  <li><a href="#About-Me">About Me</a></li>
-  <li><a href="#Work-Experience">Work Experience</a></li>
-  <li><a href="#Photography">Photography</a></li>
-  <li><a href="#Projects">Projects</a></li>
-</ul> 
+  <ul>
+    <li><a href="#About-Me">About Me</a></li>
+    <li><a href="#Work-Experience">Work Experience</a></li>
+    <li><a href="#Photography">Photography</a></li>
+    <li><a href="#Projects">Projects</a></li>
+    <li><a href="mailto:bdamani@uwaterloo.ca">Email Me</a></li>
+  </ul>
   
   <!-- Portfolio section -->
   <div class="portfolio">
@@ -169,25 +197,48 @@
 
   <!-- About Me -->
   <section id="About-Me">
-     <h1 class="About-Me">About Me</h1>
+    <h1>About Me</h1>
     <div class="about">
       <img src="DSC06717.JPG" alt="Photo of me">
-      <p>Hi there! I’m Bela Damani, a second-year Global Business and Digital Arts student at the University of Waterloo, welcome to my portfolio site! I have a large passion for design, storytelling, and building something of my own. My ultimate goal is to carve out a path where I can be my own boss, combining my creative vision with entrepreneurial spirit to create work that leaves a lasting impact. In my spare time, I love immersing myself in film. For me, movies are more than entertainment, they’re a lens through which I explore culture, emotion, and the power of storytelling. They fuel my creativity and help me approach my own projects with a fresh perspective. As I continue to grow, I strive to connect my love for design, film, and storytelling with the technical expertise I’ve developed. Every step I take is guided by a vision to create something meaningful while staying true to myself and my passions.</p>
+      <p>Hi there! I’m Bela Damani...</p>
     </div>
   </section>
+   <!-- Skills (About Me) -->
+  <section>
+    <h1>Skills</h1>
+    <table>
+      <tr>
+        <th>Skill</th>
+        <th>Proficiency</th>
+      </tr>
+      <tr>
+        <td>UX Design</td>
+        <td>Advanced</td>
+      </tr>
+      <tr>
+        <td>HTML & CSS</td>
+        <td>Intermediate</td>
+      </tr>
+      <tr>
+        <td>Photography</td>
+        <td>Advanced</td>
+      </tr>
+    </table>
+  </section>
+
 
   <!-- Work Experience -->
   <section id="Work-Experience">
-    <h1 class="Work-Experience">Work Experience</h1>
+    <h1>Work Experience</h1>
     <div class="work-experience">
       <img src="compass logo.jpg" alt="Previous workplace logo">
-      <p>During the summer of 2024, I had the opportunity to work as a Digital Delivery Intern at <a href="https://compassdigital.io/">Compass Digital</a>, an experience that played a pivotal role in shaping my skills and career aspirations. In this role, I collaborated with cross-functional teams to design and implement user-focused digital solutions, sharpening my technical expertise and problem-solving abilities. At Compass Digital, I was immersed in the fast-paced world of digital delivery, where I contributed to projects that improved user experience and streamlined processes. From working on interface designs to ensuring seamless functionality, I gained hands-on experience in bridging creativity and technology to deliver impactful results. This experience not only deepened my passion for UX design but also reinforced my ability to adapt, learn quickly, and thrive in collaborative environments. It solidified my vision to continue pursuing opportunities where I can innovate and create meaningful digital experiences.</p>
+      <p>During the summer of 2024, I...</p>
     </div>
   </section>
 
   <!-- Photography -->
   <section id="Photography">
-    <h1 class="photography">Photography</h1>
+    <h1>Photography</h1>
     <div class="photography">
       <img src="DSC06468.JPG" alt="Photo 1">
       <img src="DSC06730.JPG" alt="Photo 2">
@@ -198,7 +249,7 @@
     </div>
   </section>
 
-  <!-- Projects -->
+   <!-- Projects -->
   <section id="Projects">
   <h1 class="Projects">Projects</h1>
   <div class="projects-grid">
